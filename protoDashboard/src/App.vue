@@ -1,15 +1,15 @@
 <template>
   <div id="app">
-    
-    
+    <appDashboardSetup></appDashboardSetup>
   </div>
 </template>
 
 <script>
-
-export default {
-  name: 'app',
-  components: {
+  import DashboardSetup from './components/dashboardSetup.vue';
+  export default {
+    name: 'app',
+    components: {
+      appDashboardSetup: DashboardSetup
   }
 }
 </script>
