@@ -3,7 +3,7 @@
         <div class="container">
             <!-- Diminuir o tamanho disso. -->
             <div class="row">
-                <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                <div class="col-xs-10 col-sm-10 col-md-8 col-lg-9">
                     <div class="form-group">
                         <label>Nome:</label>
                         <input id="nomeDashboardSetup" type="text" placeholder="Nome" class="form-control">
@@ -11,7 +11,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                <div class="col-xs-10 col-sm-10 col-md-8 col-lg-9">
                     <!-- <div class="form-goup"> -->
                         <label>Select a layout:</label>
                         <br/>
@@ -90,7 +90,7 @@
             </div>
 
             <div class="row">
-                <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                <div class="col-xs-10 col-sm-10 col-md-8 col-lg-9">
                     <div class="form-group">
                         <label>
                             Team:
@@ -105,7 +105,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                <div class="col-xs-10 col-sm-10 col-md-8 col-lg-9">
                     <div class="form-group">
                         <label>
                             Team Members:
@@ -116,7 +116,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                <div class="col-xs-10 col-sm-10 col-md-8 col-lg-9">
                     <button class="btn btn-primary">Create</button>
                     <button class="btn btn-primary">Cancel</button>    
                 </div>
