@@ -1,5 +1,4 @@
 <template>
-    <form>
         <div class="container-fluid">
             <div class="row">
                 <h2 class="text-left col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">Dashboard Setup</h2>
@@ -27,72 +26,82 @@
                 </div>
             </div>
             <div class="row">
-                <div :class="bClass.noneClass"></div>
-                <!-- <div :class="bClass.svgClass">
-                    <span>
-                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" :width="svg.width" :height="svg.height" :style="svg.style">
-                            <g id="Document" fill="none" stroke="black" font-family="Times New Roman" font-size="16" transform="scale(1 -1)">
-                                <g id="Spread" transform="translate(0 -105.975)">
-                                    <path :d="svg.d" fill-rule="evenodd" stroke="none" stroke-width="0.5" :fill="svg.fill" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775"/>
-                                </g>
-                            </g>
-                        </svg>
-                    </span>
-                </div> -->
+                <div :class="bClass.noneClass">
+                </div>
                 <div :class="bClass.svgClass">
-                    <span>
-                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" stroke-width="0.50099999" stroke-linejoin="bevel" overflow="visible" fill-rule="evenodd" width="161.55pt" height="106pt" viewBox="0 0 161.55 106">
-                            <!-- <g style="overflow:visible;fill-rule:evenodd;stroke-width:0.50099999;stroke-linejoin:bevel" id="g3686" transform="matrix(1.5389468,0,0,1.0018827,27.390897,0.20331935)"> -->
-                                <g font-size="16px" font-family="Times New Roman" fill="none" stroke="#000000" transform="scale(1 -1)" id="Document-4">
-                                <!-- transform="matrix(0.99223123,0,0,-0.99808441,-17.813751,-0.1886765)" -->
-                                    <g transform="translate(0,-105.975)">
-                                        <g style="fill-rule:evenodd;stroke:none;stroke-width:0.5;stroke-miterlimit:79.84031677" stroke-miterlimit="79.8403193612775"
-                                            id="Group">
-                                            <path :fill="svgFill" style="marker-start:none;marker-end:none" inkscape:connector-curvature="0" id="path4501" d="M 0.017,-0.011 V 105.986 H 49.209 V -0.011 Z M 44.823,4.375 V 101.6 H 4.403 V 4.375 Z m 11.793,-4.386 v 105.997 h 49.193 V -0.011 Z m 44.807,4.386 V 101.6 H 61.002 V 4.375 Z"/>
+                    <span v-on:click="changeColor(0)">
+                        <!-- Azul -->
+                        <div v-show="listSvg[0]">
+                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" overflow="visible" width="161.55pt" height="106pt"
+                                viewBox="0 0 161.55 106" id="svg6176" sodipodi:docname="3-col.svg" style="display:inline;overflow:visible;fill-rule:evenodd;stroke-width:0.50099999;stroke-linejoin:bevel"
+                                >
+                                <metadata id="metadata6180">
+                                    <rdf:RDF>
+                                        <cc:Work rdf:about="">
+                                            <dc:format>image/svg+xml</dc:format>
+                                            <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                            <dc:title></dc:title>
+                                        </cc:Work>
+                                    </rdf:RDF>
+                                </metadata>
+                                <sodipodi:namedview pagecolor="#ffffff" bordercolor="#0460ad" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10"
+                                    inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1366" inkscape:window-height="745" id="namedview6178"
+                                    showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:zoom="1.6702053"
+                                    inkscape:cx="75.967375" inkscape:cy="70.649999" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:window-maximized="1"
+                                    inkscape:current-layer="svg6176" />
+                                <defs id="defs6165" />
+                                <g id="Document" font-size="16" transform="matrix(1,0,0,-1,0,0.012)" style="font-size:16px;font-family:'Times New Roman';fill:none;stroke:#000000">
+                                    <g id="Spread" transform="translate(0,-105.975)">
+                                        <g id="Layer 1">
+                                            <path d="M 0,-0.01 V 105.987 H 49.193 V -0.01 Z m 44.807,4.386 v 97.225 H 4.386 V 4.376 Z" stroke-miterlimit="79.8403193612775"
+                                                id="path6167" inkscape:connector-curvature="0"  style="fill:#0460ad;fill-rule:evenodd;stroke:none;stroke-width:0.5;stroke-miterlimit:79.84031677;marker-start:none;marker-end:none"
+                                            />
+                                            <path d="m 56.179,-0.01 v 105.997 h 49.192 V -0.01 Z m 44.806,4.386 v 97.225 H 60.565 V 4.376 Z" stroke-miterlimit="79.8403193612775"
+                                                id="path6169" inkscape:connector-curvature="0" style="fill:#0460ad;fill-rule:evenodd;stroke:none;stroke-width:0.5;stroke-miterlimit:79.84031677;marker-start:none;marker-end:none"
+                                            />
+                                            <path d="M 112.357,-0.013 V 105.984 H 161.55 V -0.013 Z m 44.807,4.386 v 97.225 H 116.743 V 4.373 Z" stroke-miterlimit="79.8403193612775"
+                                                id="path6171" inkscape:connector-curvature="0" style="fill:#0460ad;fill-rule:evenodd;stroke:none;stroke-width:0.5;stroke-miterlimit:79.84031677;marker-start:none;marker-end:none"
+                                            />
                                         </g>
                                     </g>
                                 </g>
-                            <!-- </g> -->
-                        </svg>
-                    </span>
-                </div>
-                <div :class="bClass.svgClass">
-                    <span>
-                        <svg stroke-width="0.501" stroke-linejoin="bevel" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" overflow="visible" width="161.55pt" height="105.975pt" viewBox="0 0 161.55 105.975">
-                            <g id="Document" fill="none" stroke="black" font-family="Times New Roman" font-size="16" transform="scale(1 -1)">
-                                <g id="Spread" transform="translate(0 -105.975)">
+                            </svg>
+                        </div>
+                        <!-- Cinza -->
+                        <svg v-show="!listSvg[0]" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                            xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" overflow="visible" width="161.55pt" height="106pt"
+                            viewBox="0 0 161.55 106" id="svg6176" sodipodi:docname="3-col.svg" style="display:inline;overflow:visible;fill-rule:evenodd;stroke-width:0.50099999;stroke-linejoin:bevel"
+                            >
+                            <metadata id="metadata6180">
+                                <rdf:RDF>
+                                    <cc:Work rdf:about="">
+                                        <dc:format>image/svg+xml</dc:format>
+                                        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                        <dc:title></dc:title>
+                                    </cc:Work>
+                                </rdf:RDF>
+                            </metadata>
+                            <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10"
+                                inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1366" inkscape:window-height="745" id="namedview6178"
+                                showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:zoom="1.6702053"
+                                inkscape:cx="75.967375" inkscape:cy="70.649999" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:window-maximized="1"
+                                inkscape:current-layer="svg6176" />
+                            <defs id="defs6165" />
+                            <g id="Document" font-size="16" transform="matrix(1,0,0,-1,0,0.012)" style="font-size:16px;font-family:'Times New Roman';fill:none;stroke:#000000">
+                                <g id="Spread" transform="translate(0,-105.975)">
                                     <g id="Layer 1">
-                                        <g id="Group" fill-rule="evenodd" stroke="none" stroke-width="0.5" :fill="svgFill" stroke-miterlimit="79.8403193612775">
-                                            <path d="M 0.001,-0.01 L 0.001,105.987 L 105.369,105.987 L 105.369,-0.01 L 0.001,-0.01 Z M 100.983,4.376 L 100.983,101.601 L 4.387,101.601 L 4.387,4.376 L 100.983,4.376 Z M 112.358,-0.013 L 112.358,105.984 L 161.55,105.984 L 161.55,-0.013 L 112.358,-0.013 Z M 157.164,4.373 L 157.164,101.598 L 116.744,101.598 L 116.744,4.373 L 157.164,4.373 Z" marker-start="none" marker-end="none"/>
-                                        </g>
-                                    </g>
-                                </g>
-                            </g>
-                        </svg>
-                    </span> 
-                </div>
-                <div :class="bClass.svgClass">
-                    <span>
-                        <svg stroke-width="0.501" stroke-linejoin="bevel" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" overflow="visible" width="161.55pt" height="105.975pt" viewBox="0 0 161.55 105.975">
-                            <g id="Document" fill="none" stroke="black" font-family="Times New Roman" font-size="16" transform="scale(1 -1)">
-                                <g id="Spread" transform="translate(0 -105.975)">
-                                    <g id="Layer 1">
-                                        <g id="Group" fill-rule="evenodd" stroke="none" stroke-width="0.5" :fill="svgFill" stroke-miterlimit="79.8403193612775">
-                                            <path d="M 56.182,-0.01 L 56.182,105.987 L 161.55,105.987 L 161.55,-0.01 L 56.182,-0.01 Z M 157.164,4.376 L 157.164,101.601 L 60.568,101.601 L 60.568,4.376 L 157.164,4.376 Z M 0,-0.013 L 0,105.984 L 49.193,105.984 L 49.193,-0.013 L 0,-0.013 Z M 44.807,4.373 L 44.807,101.598 L 4.386,101.598 L 4.386,4.373 L 44.807,4.373 Z" marker-start="none" marker-end="none"/>
-                                        </g>
-                                    </g>
-                                </g>
-                            </g>
-                        </svg>
-                    </span>
-                </div>
-                <div :class="bClass.svgClass">
-                    <span>
-                        <svg stroke-width="0.501" stroke-linejoin="bevel" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" overflow="visible" width="161.1pt" height="105.975pt" viewBox="0 0 161.1 105.975">
-                            <g id="Document" fill="none" stroke="black" font-family="Times New Roman" font-size="16" transform="scale(1 -1)">
-                                <g id="Spread" transform="translate(0 -105.975)">
-                                    <g id="Layer 1">
-                                        <path d="M 0.012,-0.011 L 0.012,105.986 L 161.088,105.986 L 161.088,-0.011 L 0.012,-0.011 Z M 156.702,4.375 L 156.702,101.6 L 4.398,101.6 L 4.398,4.375 L 156.702,4.375 Z" stroke-width="0.5" stroke="none" :fill="svgFill" fill-rule="evenodd" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775"/>
+                                        <path d="M 0,-0.01 V 105.987 H 49.193 V -0.01 Z m 44.807,4.386 v 97.225 H 4.386 V 4.376 Z" stroke-miterlimit="79.8403193612775"
+                                            id="path6167" inkscape:connector-curvature="0"  style="fill:#666666;fill-rule:evenodd;stroke:none;stroke-width:0.5;stroke-miterlimit:79.84031677;marker-start:none;marker-end:none"
+                                        />
+                                        <path d="m 56.179,-0.01 v 105.997 h 49.192 V -0.01 Z m 44.806,4.386 v 97.225 H 60.565 V 4.376 Z" stroke-miterlimit="79.8403193612775"
+                                            id="path6169" inkscape:connector-curvature="0" style="fill:#666666;fill-rule:evenodd;stroke:none;stroke-width:0.5;stroke-miterlimit:79.84031677;marker-start:none;marker-end:none"
+                                        />
+                                        <path d="M 112.357,-0.013 V 105.984 H 161.55 V -0.013 Z m 44.807,4.386 v 97.225 H 116.743 V 4.373 Z" stroke-miterlimit="79.8403193612775"
+                                            id="path6171" inkscape:connector-curvature="0" style="fill:#666666;fill-rule:evenodd;stroke:none;stroke-width:0.5;stroke-miterlimit:79.84031677;marker-start:none;marker-end:none"
+                                        />
                                     </g>
                                 </g>
                             </g>
@@ -136,11 +145,11 @@
                 </div>
             </div>
         </div>
-    </form>
 </template>
 
 <script>
 export default {
+    props: ['selectedLayout'],
     data() {
         return {
             bClass: {
@@ -152,29 +161,20 @@ export default {
             teamMembers: [],
             nameDashboard: '',
             svgFill: '#666666',
-            listSvg: [
-                {
-                    d: 'M 0,-0.01 L 0,105.987 L 49.193,105.987 L 49.193,-0.01 L 0,-0.01 Z M 44.807,4.376 L 44.807,101.601 L 4.386,101.601 L 4.386,4.376 L 44.807,4.376 Z M 56.179,-0.01 L 56.179,105.987 L 105.371,105.987 L 105.371,-0.01 L 56.179,-0.01 Z M 100.985,4.376 L 100.985,101.601 L 60.565,101.601 L 60.565,4.376 L 100.985,4.376 Z M 112.357,-0.013 L 112.357,105.984 L 161.55,105.984 L 161.55,-0.013 L 112.357,-0.013 Z M 157.164,4.373 L 157.164,101.598 L 116.743,101.598 L 116.743,4.373 L 157.164,4.373 Z',
-                    titulo: '3-col',
-                    fill: '#666666',
-                    overflow: "visible",
-                    width: "161.55pt",
-                    height: "105.975pt",
-                    style: "stroke-width:0.501;stroke-linejoin:bevel;overflow:visible;fill-rule:evenodd;viewBox:0 0 161.55 105.975"
-                },{
-                    titulo: '2-col',
-                    fill: '#666666'
-                },{
-                    titulo: '2-col 1-big 1-small',
-                    fill: '#666666'
-                },{
-                    titulo: '2-col 1-small 1-big',
-                    fill: '#666666'
-                },{
-                    titulo: '1-col',
-                    fill: '#666666'
-                },
-            ]
+            listSvg: [false, false, false, false, false],
+        }
+    },
+    methods: {
+        changeColor(pos) {
+            console.log(this.listSvg[pos]);
+             this.listSvg[pos] = !this.listSvg[pos];
+        }
+    },
+    watch: {
+        selectedLayout: () => {
+            this.listSvg = [false, false, false, false, false];
+            if (selectedLayout != '')
+                this.listSvg[selectedLayout] = true;
         }
     }
   
@@ -187,7 +187,14 @@ svg {
     /* margin-left: 20%;
     margin-right: 20%; */
 }
-label {
-    text-align: left;
+
+#path6167{
+    fill: #666666;
+    fill-rule:evenodd;
+    stroke:none;
+    stroke-width:0.5;
+    stroke-miterlimit:79.84031677;
+    marker-start:none;
+    marker-end:none
 }
 </style>

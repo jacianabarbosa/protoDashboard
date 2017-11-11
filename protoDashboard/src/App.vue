@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <appDashboardSetup></appDashboardSetup>
+    <appDashboardSetup :selectedLayout="selectedLayout"></appDashboardSetup>
   </div>
 </template>
 
@@ -8,10 +8,20 @@
   import DashboardSetup from './components/dashboardSetup.vue';
   export default {
     name: 'app',
+    data() {
+      return {
+        selectedLayout: ''
+      }
+    },
     components: {
       appDashboardSetup: DashboardSetup
+    },
+    computed: {
+      getSelectedLayout(layout) {
+        this.selectedLayout = layout;
+      }
+    }
   }
-}
 </script>
 
 <style>
