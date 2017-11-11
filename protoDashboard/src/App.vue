@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <appDashboardSetup :selectedLayout="selectedLayout"></appDashboardSetup>
+    <appDashboardSetup :selectedLayout="selectedLayout" @setSelectedLayout="changeSelectedLayout"></appDashboardSetup>
   </div>
 </template>
 
@@ -10,15 +10,15 @@
     name: 'app',
     data() {
       return {
-        selectedLayout: ''
+        selectedLayout: -1
       }
     },
     components: {
       appDashboardSetup: DashboardSetup
     },
-    computed: {
-      getSelectedLayout(layout) {
-        this.selectedLayout = layout;
+    methods: {
+      changeSelectedLayout(pos) {
+        this.selectedLayout = pos;
       }
     }
   }
