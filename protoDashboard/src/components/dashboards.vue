@@ -17,7 +17,8 @@
           <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
         </div>
       </div>
-      <div class="row">
+      <!-- layout -->
+      <div class="row" v-if="layout == 0">
         <div class="addChart col-xs-3 col-sm-3 col-md-3 col-lg-3">
             <span>+ Add Chart</span>
         </div>
@@ -30,11 +31,29 @@
             <span>+ Add Chart</span>
         </div>
       </div>
+      <div class="row" v-if="layout == 1">
+        layout 1
+      </div>
+      <div class="row" v-if="layout == 2">
+        layout 2
+      </div>
+      <div class="row" v-if="layout == 3">
+        layout 3
+      </div>
+      <div class="row" v-if="layout == 4">
+        layout 4
+      </div>
     </div>
 </template>
 
 <script>
     export default{
+      props: {
+        layout: {
+          type: Number,
+          required: true
+        }
+      },
       data() {
         return{
           botoes: ["Visao Geral", "vendas", "botao", "a"]

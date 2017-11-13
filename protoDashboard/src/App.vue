@@ -1,20 +1,24 @@
 <template>
   <div id="app">
     <appDashboardSetup :selectedLayout="selectedLayout" @setSelectedLayout="changeSelectedLayout"></appDashboardSetup>
+    <hr>
+    <app-dashboards :layout="selectedLayout"></app-dashboards>
   </div>
 </template>
 
 <script>
   import DashboardSetup from './components/dashboardSetup.vue';
+  import Dashboards from './components/dashboards.vue';
   export default {
     name: 'app',
     data() {
       return {
-        selectedLayout: -1
+        selectedLayout: 2
       }
     },
     components: {
-      appDashboardSetup: DashboardSetup
+      appDashboardSetup: DashboardSetup,
+      appDashboards: Dashboards
     },
     methods: {
       changeSelectedLayout(pos) {
