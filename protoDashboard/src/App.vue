@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <appDashboardSetup :selectedLayout="selectedLayout" @setSelectedLayout="changeSelectedLayout"></appDashboardSetup>
+    <appDashboardSetup @submitDashboardSetup="console.log($event.nome)"></appDashboardSetup>
     <hr>
     <app-dashboards :layout="selectedLayout"></app-dashboards>
   </div>
@@ -13,7 +13,8 @@
     name: 'app',
     data() {
       return {
-        selectedLayout: 2
+        selectedLayout: -1,
+        dashboards: []
       }
     },
     components: {
@@ -21,8 +22,8 @@
       appDashboards: Dashboards
     },
     methods: {
-      changeSelectedLayout(pos) {
-        this.selectedLayout = pos;
+      submitDashboardSetup(dashboardSetup) {
+        
       }
     }
   }
