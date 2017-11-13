@@ -43,11 +43,8 @@
         <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
       </div>
       <div class="row" v-if="layout == 2">
-         <div class="addChart col-xs-3 col-sm-3 col-md-3 col-lg-3">
-            <span>+ Add Chart</span>
-        </div>
         <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-        <div class="addChart col-xs-3 col-sm-3 col-md-3 col-lg-3">
+        <div class="addChart col-xs-5 col-sm-5 col-md-5 col-lg-5">
             <span>+ Add Chart</span>
         </div>
         <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
@@ -56,10 +53,20 @@
         </div>
       </div>
       <div class="row" v-if="layout == 3">
-        layout 3
+        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+        <div class="addChart col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <span>+ Add Chart</span>
+        </div>
+        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+        <div class="addChart col-xs-5 col-sm-5 col-md-5 col-lg-5">
+            <span>+ Add Chart</span>
+        </div>
       </div>
       <div class="row" v-if="layout == 4">
-        layout 4
+        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+        <div class="addChart col-xs-10 col-sm-10 col-md-10 col-lg-10">
+            <span>+ Add Chart</span>
+        </div>
       </div>
     </div>
 </template>
