@@ -32,7 +32,15 @@
         </div>
       </div>
       <div class="row" v-if="layout == 1">
-        layout 1
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+        <div class="addChart col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <span>+ Add Chart</span>
+        </div>
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+        <div class="addChart col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <span>+ Add Chart</span>
+        </div>
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
       </div>
       <div class="row" v-if="layout == 2">
         layout 2
@@ -64,8 +72,8 @@
 
 <style scoped>
 .addChart{
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding-top: 15%;
+  padding-bottom: 15%;
   margin: 0% 1% 0% 1%;
   border-style: dashed;
   border-radius: 5px;
@@ -73,9 +81,5 @@
 }
 .row {
   margin-bottom: 2%;
-}
-
-.{
-  background-color: blue;
 }
 </style>
